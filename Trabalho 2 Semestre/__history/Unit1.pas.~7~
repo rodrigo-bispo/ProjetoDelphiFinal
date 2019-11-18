@@ -1,0 +1,42 @@
+unit Ex2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus, Vcl.ExtCtrls;
+
+type
+  TEx2 = class(TForm)
+    Panel1: TPanel;
+    GroupBox1: TGroupBox;
+    Edit3: TEdit;
+    GroupBox2: TGroupBox;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    GroupBox3: TGroupBox;
+    Edit2: TEdit;
+    Button1: TButton;
+    Edit1: TEdit;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Ex2: TEx2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TEx2.Button1Click(Sender: TObject);
+begin
+close;
+end;
+
+end.

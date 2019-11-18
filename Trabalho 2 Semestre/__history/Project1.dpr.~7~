@@ -1,0 +1,30 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  trabalho in 'trabalho.pas' {Form3},
+  Unit4 in 'Unit4.pas' {Form4},
+  Ex2 in 'Ex2.pas' {Ex1},
+  Unit2 in 'Unit2.pas' {Form2},
+  componentes in 'componentes.pas' {Form5},
+  Ex5 in 'Ex5.pas' {Form6},
+  Ex6 in 'Ex6.pas' {Form7},
+  Ex7 in 'Ex7.pas' {Form8},
+  pesquisa in 'pesquisa.pas' {Form9};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  AApplication.CreateForm(TForm3, Form3);
+  AApplication.CreateForm(TForm4, Form4);
+  AApplication.CreateForm(TEx1, Ex1);
+  AApplication.CreateForm(TForm2, Form2);
+  AApplication.CreateForm(TForm5, Form5);
+  AApplication.CreateForm(TForm6, Form6);
+  AApplication.CreateForm(TForm7, Form7);
+  Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
+  tion.Run;
+end.

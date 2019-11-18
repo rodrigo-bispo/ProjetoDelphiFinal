@@ -1,0 +1,53 @@
+unit Agenda;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    MainMenu1: TMainMenu;
+    Sair1: TMenuItem;
+    Exercicio1: TMenuItem;
+    Exerccio11: TMenuItem;
+    Exerccio21: TMenuItem;
+    Exerccio31: TMenuItem;
+    Exerccio41: TMenuItem;
+    Exerccio51: TMenuItem;
+    Exerccio61: TMenuItem;
+    Exerccio71: TMenuItem;
+    procedure Sair1Click(Sender: TObject);
+    procedure Exerccio11Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+uses Exercicio2;
+
+procedure TForm2.Exerccio11Click(Sender: TObject);
+begin
+
+if (form2 = nil) then
+form3 := tform3.create(self);
+form3.showmodal;
+
+end;
+
+
+procedure TForm2.Sair1Click(Sender: TObject);
+begin
+close;
+end;
+
+end.

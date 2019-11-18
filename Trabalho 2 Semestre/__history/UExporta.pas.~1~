@@ -1,0 +1,50 @@
+unit UExporta;
+
+interface
+
+type
+
+  TExportacao = class abstract
+  public
+    Exportar: String;
+  end;
+
+  TExportaTexto = class
+
+public class TExportaTexto : TExportacao
+{
+	public string Texto {get; set;}
+
+	public override string Exportar (Texto) {
+
+		if (Texto == "" || Texto == null)
+			console.writeLine("O Texto é vazio");
+	}
+}
+
+public class TExportaInvertido : TExportaTexto {
+
+	public override string Exportar(Texto) {
+
+		if(quantidade > 0)
+		{
+			//retornará a quantidade de letras correspondente a este parâmetro
+		}
+		else{
+		//retornará o texto invertido
+			Var textoInvertido = Texto
+		}
+	}
+}
+
+public class TExportaInvertido : TExportaTexto {
+
+	public override string Exportar(Texto) {
+
+	}
+}
+
+
+implementation
+
+end.
